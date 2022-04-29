@@ -1,118 +1,201 @@
 
     <html>
-    <head><title>quotes.justin.vc</title></head>
+    <head>
+        <title>quotes.justin.vc</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.js"></script>
+    <script>
+        $(function() {$("#myTable").tablesorter();});
+    </script>
     <body>
-        <table border="1" class="dataframe table-bordered table-striped table-hover">
+        <table border="1" class="dataframe tablesorter table-bordered table-striped table-hover th" id="myTable">
   <thead>
-    <tr style="text-align: justify-all;">
-      <th style="min-width: 100px;"></th>
-      <th style="min-width: 100px;"></th>
-      <th style="min-width: 100px;">Text</th>
+    <tr style="text-align: right;">
+      <th style="min-width: 100px;">Date</th>
+      <th style="min-width: 100px;">Time</th>
       <th style="min-width: 100px;">Link</th>
+      <th style="min-width: 100px;">Text</th>
       <th style="min-width: 100px;">Comments</th>
-    </tr>
-    <tr>
-      <th>Date</th>
-      <th>Time</th>
-      <th style="min-width: 100px;"></th>
-      <th style="min-width: 100px;"></th>
-      <th style="min-width: 100px;"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>2021-11-16</th>
-      <th>10:41:32</th>
-      <td>a linked list is usually efficient when it comes to adding and removing most elements, but can be very slow to search and find a single element.</td>
+      <td>2021-11-16</td>
+      <td>10:41:32</td>
       <td><a href=https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996><div>What’s a Linked List, Anyway? [Part 2]</div></a></td>
+      <td>a linked list is usually efficient when it comes to adding and removing most elements, but can be very slow to search and find a single element.</td>
       <td></td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">2021-12-31</th>
-      <th>12:07:04</th>
-      <td>The more your life bends around a single topic, the more out-of-touch you become with the rest of software.</td>
+      <td>2021-12-31</td>
+      <td>16:08:56</td>
+      <td><a href=https://buttondown.email/hillelwayne/archive/no-seriously-hate-your-tools/><div>No Seriously, Hate Your Tools</div></a></td>
+      <td>We’re better at finding flaws in claims we don’t agree with than claims we do. It’s so easy to believe things that sound nice to us, even if they’re not true. It’s such a blatant cognitive bias. You don’t need to talk about availability heuristics or risk averseness or anything like that, it’s just “if you like something, you’ll be less diligent about evaluating it.”</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2021-12-31</td>
+      <td>12:07:04</td>
       <td><a href=https://buttondown.email/hillelwayne/archive/principles-of-software-evangelism/><div>Principles of Software Evangelism</div></a></td>
+      <td>The more your life bends around a single topic, the more out-of-touch you become with the rest of software.</td>
       <td>This is a comment.</td>
     </tr>
     <tr>
-      <th>16:08:56</th>
-      <td>We’re better at finding flaws in claims we don’t agree with than claims we do. It’s so easy to believe things that sound nice to us, even if they’re not true. It’s such a blatant cognitive bias. You don’t need to talk about availability heuristics or risk averseness or anything like that, it’s just “if you like something, you’ll be less diligent about evaluating it.”</td>
-      <td><a href=https://buttondown.email/hillelwayne/archive/no-seriously-hate-your-tools/><div>No Seriously, Hate Your Tools</div></a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>2022-01-05</th>
-      <th>23:34:59</th>
-      <td>The worlds most accomplished computer programmer would instantly become "low skill" if they time travelled to the 16th century.</td>
+      <td>2022-01-05</td>
+      <td>23:34:59</td>
       <td><a href=https://twitter.com/hamandcheese/status/1478850572677791749><div>Samuel Hammond 🌐🏛 on Twitter</div></a></td>
+      <td>The worlds most accomplished computer programmer would instantly become "low skill" if they time travelled to the 16th century.</td>
       <td></td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">2022-01-12</th>
-      <th>13:03:11</th>
-      <td>Micromarriages come from this post by Chris Olah. They’re a riff on micromorts, a one-in-a-million chance of dying. Risk analysts use micromorts to compare how dangerous different things are: scuba diving is 5 micromorts per dive;  COVID is 2,500 micromorts per infection; climbing Mt. Everest is 30,000 micromorts per attempt. So by analogy, micromarriages are a one in a million chance of getting married. Maybe going to a party gets you 500 micromarriages, and signing up for a really good dating site gives you 10,000. If there’s a Mt. Everest equivalent, I don’t know about it.</td>
+      <td>2022-01-12</td>
+      <td>13:14:56</td>
+      <td><a href=https://astralcodexten.substack.com/p/highlights-from-the-comments-on-dont><div>Astral Codex Ten</div></a></td>
+      <td>P(A|B) = [P(A)*P(B|A)]/P(B), all the rest is commentary.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-01-12</td>
+      <td>13:03:11</td>
       <td><a href=https://astralcodexten.substack.com/p/theres-a-time-for-everyone><div>There's A Time For Everyone</div></a></td>
+      <td>Micromarriages come from this post by Chris Olah. They’re a riff on micromorts, a one-in-a-million chance of dying. Risk analysts use micromorts to compare how dangerous different things are: scuba diving is 5 micromorts per dive;  COVID is 2,500 micromorts per infection; climbing Mt. Everest is 30,000 micromorts per attempt. So by analogy, micromarriages are a one in a million chance of getting married. Maybe going to a party gets you 500 micromarriages, and signing up for a really good dating site gives you 10,000. If there’s a Mt. Everest equivalent, I don’t know about it.</td>
       <td>Beep.</td>
     </tr>
     <tr>
-      <th>13:14:56</th>
-      <td>P(A|B) = [P(A)*P(B|A)]/P(B), all the rest is commentary.</td>
-      <td><a href=https://astralcodexten.substack.com/p/highlights-from-the-comments-on-dont><div>Astral Codex Ten</div></a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">2022-01-14</th>
-      <th>08:33:37</th>
-      <td>GitFlow is a methodology which works in a certain contexts, like actually having to support multiple versions of the product. This doesn't mean that you can't have continuous integration or even continuous deployment.   Compared to this, trunk based development is easier - but it will not work when supporting multiple lines of product.  Use trunk-based development whenever possible - it's easier on multitude of levels. But, as EVERY SINGLE THING IN THE INDUSTRY it's not a silver bullet.</td>
+      <td>2022-01-14</td>
+      <td>08:33:37</td>
       <td><a href=https://www.youtube.com/watch?v=JOr4QeIjyW4><div>Git Flow Is A Bad Idea • Dave Farley • GOTO 2021 - YouTube</div></a></td>
+      <td>GitFlow is a methodology which works in a certain contexts, like actually having to support multiple versions of the product. This doesn't mean that you can't have continuous integration or even continuous deployment.   Compared to this, trunk based development is easier - but it will not work when supporting multiple lines of product.  Use trunk-based development whenever possible - it's easier on multitude of levels. But, as EVERY SINGLE THING IN THE INDUSTRY it's not a silver bullet.</td>
       <td></td>
     </tr>
     <tr>
-      <th>14:51:34</th>
-      <td>Mortgage securitization, and secondary sales of loans, and other mechanisms cause mortgages to migrate from the banking sector to pools of capital which are more structurally insulated against the interest rate cycle.</td>
+      <td>2022-01-14</td>
+      <td>14:51:34</td>
       <td><a href=https://bam.kalzumeus.com/archive/mortgages-are-a-manufactured-product/><div>Mortgages are a manufactured product</div></a></td>
+      <td>Mortgage securitization, and secondary sales of loans, and other mechanisms cause mortgages to migrate from the banking sector to pools of capital which are more structurally insulated against the interest rate cycle.</td>
       <td></td>
     </tr>
     <tr>
-      <th>2022-01-19</th>
-      <th>15:18:58</th>
-      <td>the more actual freedom people have, the harder and less rewarding managing or leading people becomes, so fewer people want to do it, and of those who do, most only want to appear to be doing it because the rewards of the theater are almost as high as the rewards of doing it</td>
+      <td>2022-01-19</td>
+      <td>15:18:58</td>
       <td><a href=https://twitter.com/vgr/status/1483895308551553024><div>Venkatesh Rao (7/100 animations ) on Twitter</div></a></td>
+      <td>the more actual freedom people have, the harder and less rewarding managing or leading people becomes, so fewer people want to do it, and of those who do, most only want to appear to be doing it because the rewards of the theater are almost as high as the rewards of doing it</td>
       <td></td>
     </tr>
     <tr>
-      <th>2022-01-26</th>
-      <th>17:34:11</th>
-      <td>You are not running out of time nor too late for anything</td>
+      <td>2022-01-26</td>
+      <td>17:34:11</td>
       <td><a href=https://twitter.com/nickcammarata/status/1486456943535222788><div>Nick Cammarata on Twitter</div></a></td>
+      <td>You are not running out of time nor too late for anything</td>
       <td></td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">2022-02-08</th>
-      <th>09:56:54</th>
-      <td>One of the great things about the Internet is that it routes packets, not sticks or stones.</td>
+      <td>2022-02-08</td>
+      <td>09:56:54</td>
       <td><a href=https://www.unqualified-reservations.org/2007/04/my-new-comments-policy/><div>My new comments policy | Unqualified Reservations by Mencius Moldbug</div></a></td>
+      <td>One of the great things about the Internet is that it routes packets, not sticks or stones.</td>
       <td></td>
     </tr>
     <tr>
-      <th>19:32:08</th>
-      <td>You know what doesn’t need oxygen or water or food? A rock with the phrase “YOUR RIDICULOUS-SOUNDING CONTRARIAN IDEA IS WRONG” written on it.</td>
+      <td>2022-02-08</td>
+      <td>19:32:08</td>
       <td><a href=https://astralcodexten.substack.com/p/heuristics-that-almost-always-work><div>Heuristics That Almost Always Work</div></a></td>
+      <td>You know what doesn’t need oxygen or water or food? A rock with the phrase “YOUR RIDICULOUS-SOUNDING CONTRARIAN IDEA IS WRONG” written on it.</td>
       <td>None</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">2022-02-09</th>
-      <th>19:44:28</th>
-      <td>History provides no controlled experiments, and expecting data from an uncontrolled experiment to tell you something is the epistemic equivalent of barebacking.</td>
+      <td>2022-02-09</td>
+      <td>19:44:28</td>
       <td><a href=https://www.unqualified-reservations.org/2007/05/what-if-theres-no-such-thing-as-chaotic/><div>What if there’s no such thing as chaotic good? | Unqualified Reservations by Mencius Moldbug</div></a></td>
+      <td>History provides no controlled experiments, and expecting data from an uncontrolled experiment to tell you something is the epistemic equivalent of barebacking.</td>
       <td></td>
     </tr>
     <tr>
-      <th>21:40:32</th>
-      <td>Every Sauron considers himself a Boromir</td>
+      <td>2022-02-09</td>
+      <td>21:40:32</td>
       <td><a href=https://www.unqualified-reservations.org/2007/05/iron-polygon-power-in-united-states/><div>The iron polygon: power in the United States | Unqualified Reservations by Mencius Moldbug</div></a></td>
+      <td>Every Sauron considers himself a Boromir</td>
       <td></td>
+    </tr>
+    <tr>
+      <td>2022-04-24</td>
+      <td>15:04:11</td>
+      <td><a href=https://theliberalpatriot.substack.com/p/6-habits-of-highly-effective-citizens><div>6 Habits of Highly Effective Citizens</div></a></td>
+      <td>Politics is too important to our economic well-being and legal rights not to pay attention. But politics is also too nuts to make it a focal point in life. The highly effective citizen will find a proper balance between engaging in politics and disengaging from politics to enjoy other aspects of life as the seasons move on.</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-24</td>
+      <td>15:00:00</td>
+      <td><a href=https://theliberalpatriot.substack.com/p/the-fox-news-fallacy><div>The Fox News Fallacy</div></a></td>
+      <td>The Fox News Fallacy is having a dire effect on many Democrats. This is the idea that if Fox News (substitute here the conservative bête noire of your choice if you prefer) criticizes the Democrats for X then there must be absolutely nothing to X and the job of Democrats is to assert that loudly and often. The problem is that an issue is not necessarily completely invalid just because Fox News mentions it. That depends on the issue.</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-24</td>
+      <td>02:29:32</td>
+      <td><a href=https://twitter.com/patio11/status/1468917946995347459><div>Patrick McKenzie on Twitter</div></a></td>
+      <td>In markets in everything news, apparently the culture that is Japanese golf somewhat encourages you to throw a party for all your friends at the golf club if you score a hole in one or albatross.  It's a big deal. Branded goods, lots of alcohol, etc. Costs about $10k.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-04-24</td>
+      <td>14:38:40</td>
+      <td><a href=https://freddiedeboer.substack.com/p/multiple-personality-disorder-probably/comments><div>"Multiple Personality Disorder" Probably Doesn't Exist, And There Certainly Hasn't Been an Explosion of It Among the Youth</div></a></td>
+      <td>So much of what we assume is cultural dysfunction is really just kids being bored online.</td>
+      <td>Bored kids on Tumblr, etc. - arguably the onus shouldn't be placed on said kids, but the adults reacting - All those goth and emo kids are (probably) productive adults now</td>
+    </tr>
+    <tr>
+      <td>2022-04-25</td>
+      <td>17:14:26</td>
+      <td><a href=https://twitter.com/leaacta/status/1374328647163772934><div>🔪 on Twitter</div></a></td>
+      <td>life hack: you don't have to explain yourself or understand anything, you can just do stuff</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2022-04-25</td>
+      <td>13:11:10</td>
+      <td><a href=https://freddiedeboer.substack.com/p/the-politics-of-pure-affiliation><div>The Politics of Pure Affiliation Has Driven Everyone Absolutely Insane</div></a></td>
+      <td>Affiliation doesn't just replace principle, it preempts the possibility of principle.</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-27</td>
+      <td>13:31:37</td>
+      <td><a href=https://eigenrobot.substack.com/p/walk-backward-into-hell><div>walk backward into hell</div></a></td>
+      <td>I see reciting one’s own political beliefs in another’s thread as the social equivalent of walking into a party and shitting on the floor</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-27</td>
+      <td>13:10:51</td>
+      <td><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></td>
+      <td>Of all the toxic and disheartening elements of the internet era, the worst is the way that our concept of human value is so often seen as purely crowdsourced, I think. It’s resulted in an internet where a huge portion of the activity ultimately amounts to people begging strangers to approve of them.</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-27</td>
+      <td>13:11:41</td>
+      <td><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></td>
+      <td>Even being a rock star can’t turn off the part of your mind that hates you and wants you to feel bad.</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-27</td>
+      <td>13:08:23</td>
+      <td><a href=https://www.nytimes.com/2022/04/27/opinion/elon-musk-twitter.html><div>Opinion | Elon Musk Got Twitter Because He Gets Twitter</div></a></td>
+      <td>Jack Dorsey, Twitter’s co-founder and former chief executive, always wanted it to be something else. Something it wasn’t, and couldn’t be. “The purpose of Twitter is to serve the public conversation,” he said in 2018. Twitter began “measuring conversational health” and trying to tweak the platform to burnish it. Sincere as the effort was, it was like those liquor ads advising moderation. You don’t get people to drink less by selling them whiskey.</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2022-04-27</td>
+      <td>13:13:53</td>
+      <td><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></td>
+      <td>I never worried about my validity while changing a diaper. I never worried about my validity when caring for an old dog. I never worried about my validity when planting flowers.  When these thoughts--about my validity-- arise in my brain I try to do a task for someone/something else.</td>
+      <td>Kathleen McCook, from the comments</td>
     </tr>
   </tbody>
 </table>

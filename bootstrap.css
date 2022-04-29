@@ -8842,7 +8842,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 400 !important;
 }
 
 .font-italic {
@@ -9028,3 +9028,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+th {
+  cursor: pointer;
+}

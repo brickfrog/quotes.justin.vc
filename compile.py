@@ -34,11 +34,11 @@ def main():
                 quote_comment = q.get("comment")
                 quote_text = q.get("text")
 
-                quote = [quote_date, quote_text, quote_title, quote_comment, quote_url]
+                quote = [quote_date, quote_title, quote_text, quote_comment, quote_url]
                 quotes.append(quote)
 
     table = pd.DataFrame(
-        quotes, columns=["DateTime", "Text", "Link", "Comments", "URL"]
+        quotes, columns=["DateTime", "Link", "Text", "Comments", "URL"]
     )
     table["DateTime"] = pd.to_datetime(table["DateTime"], infer_datetime_format=True)
 
@@ -49,32 +49,44 @@ def main():
         lambda x: bs4.BeautifulSoup(x, "lxml").get_text().replace("\n", " ")
     )
     table["Link"] = "<a href=" + table["URL"] + "><div>" + table["Link"] + "</div></a>"
-    table = table.drop(["URL", "DateTime"], axis=1)
-    table = table.set_index(["Date", "Time"]).sort_index()
+    table = table.drop(["URL", "DateTime"], axis=1).sort_values(by=['Date']).reset_index()
+
+    # Doesn't work with JQuery Tablesorter - figure out?
+    #table = table.set_index(["Date", "Link", "Time", "Text", "Comments"]).sort_index()
+
+    table = table.reindex(['Date','Time', 'Link', 'Text','Comments'], axis=1)
 
     html_string = """
     <html>
-    <head><title>quotes.justin.vc</title></head>
+    <head>
+        <title>quotes.justin.vc</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.js"></script>
+    <script>
+        $(function() {{$("#myTable").tablesorter();}});
+    </script>
     <body>
         {table}
     </body>
     </html>.
     """
 
-    with open("index.html", "w") as file:
-        file.write(
-            html_string.format(
+    formatted_string = html_string.format(
                 table=table.to_html(
-                    classes=["table-bordered", "table-striped", "table-hover"],
+                    classes=["tablesorter table-bordered", "table-striped", "table-hover", "th"],
+                    table_id="myTable",
                     escape=False,
-                    justify="justify-all",
                     col_space=100,
+                    index=False
                 )
             )
-        )
+
+    with open("index.html", "w") as file:
+        file.write(formatted_string)
 
 
 if __name__ == "__main__":
     main()
-    
