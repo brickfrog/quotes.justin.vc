@@ -49,12 +49,14 @@ def main():
         lambda x: bs4.BeautifulSoup(x, "lxml").get_text().replace("\n", " ")
     )
     table["Link"] = "<a href=" + table["URL"] + "><div>" + table["Link"] + "</div></a>"
-    table = table.drop(["URL", "DateTime"], axis=1).sort_values(by=['Date']).reset_index()
+    table = (
+        table.drop(["URL", "DateTime"], axis=1).sort_values(by=["Date"]).reset_index()
+    )
 
     # Doesn't work with JQuery Tablesorter - figure out?
-    #table = table.set_index(["Date", "Link", "Time", "Text", "Comments"]).sort_index()
+    # table = table.set_index(["Date", "Link", "Time", "Text", "Comments"]).sort_index()
 
-    table = table.reindex(['Date','Time', 'Link', 'Text','Comments'], axis=1)
+    table = table.reindex(["Date", "Time", "Link", "Text", "Comments"], axis=1)
 
     html_string = """
     <html>
@@ -75,14 +77,19 @@ def main():
     """
 
     formatted_string = html_string.format(
-                table=table.to_html(
-                    classes=["tablesorter table-bordered", "table-striped", "table-hover", "th"],
-                    table_id="myTable",
-                    escape=False,
-                    col_space=100,
-                    index=False
-                )
-            )
+        table=table.to_html(
+            classes=[
+                "tablesorter table-bordered",
+                "table-striped",
+                "table-hover",
+                "th",
+            ],
+            table_id="myTable",
+            escape=False,
+            col_space=100,
+            index=False,
+        )
+    )
 
     with open("index.html", "w") as file:
         file.write(formatted_string)
