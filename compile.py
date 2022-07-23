@@ -10,7 +10,7 @@ import pandas as pd
 def main():
     """
     Reads the QuoteBack export to my Downloads folder,
-    and parses it using panda's to_html
+    and parses it using panda's to_html returning an index.html file.
     """
 
     # Definitely a better way of doing this, but for now it works
@@ -52,14 +52,8 @@ def main():
         lambda x: bs4.BeautifulSoup(x, "lxml").get_text().replace("\n", " ")
     )
     table["Link"] = "<a href=" + table["URL"] + "><div>" + table["Link"] + "</div></a>"
-    table = (
-        table.drop(["URL", "DateTime"], axis=1).sort_values(by=["Date"]).reset_index()
-    )
-
-    # Doesn't work with JQuery Tablesorter - figure out?
-    # table = table.set_index(["Date", "Link", "Time", "Text", "Comments"]).sort_index()
-
-    table = table.reindex(["Date", "Time", "Link", "Text", "Comments"], axis=1)
+    table = (table.drop(["URL", "DateTime", "Comments"], axis=1))
+    table = table.set_index(["Date", "Link", "Time"]).sort_index(ascending=False)
 
     html_string = """
     <html>
@@ -68,11 +62,6 @@ def main():
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="jquery.tablesorter.js"></script>
-    <script>
-        $(function() {{$("#myTable").tablesorter();}});
-    </script>
     <body>
         {table}
     </body>
@@ -82,7 +71,7 @@ def main():
     formatted_string = html_string.format(
         table=table.to_html(
             classes=[
-                "tablesorter table-bordered",
+                "table-bordered",
                 "table-striped",
                 "table-hover",
                 "th",
@@ -90,13 +79,12 @@ def main():
             table_id="myTable",
             escape=False,
             col_space=100,
-            index=False,
+            index=True,
         )
     )
 
     with open("index.html", "w") as file:
         file.write(formatted_string)
-
 
 if __name__ == "__main__":
     main()

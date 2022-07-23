@@ -5,421 +5,334 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="jquery.tablesorter.js"></script>
-    <script>
-        $(function() {$("#myTable").tablesorter();});
-    </script>
     <body>
-        <table border="1" class="dataframe tablesorter table-bordered table-striped table-hover th" id="myTable">
+        <table border="1" class="dataframe table-bordered table-striped table-hover th" id="myTable">
   <thead>
     <tr style="text-align: right;">
-      <th style="min-width: 100px;">Date</th>
-      <th style="min-width: 100px;">Time</th>
-      <th style="min-width: 100px;">Link</th>
+      <th style="min-width: 100px;"></th>
+      <th style="min-width: 100px;"></th>
+      <th style="min-width: 100px;"></th>
       <th style="min-width: 100px;">Text</th>
-      <th style="min-width: 100px;">Comments</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th>Link</th>
+      <th>Time</th>
+      <th style="min-width: 100px;"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>2021-11-16</td>
-      <td>10:41:32</td>
-      <td><a href=https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996><div>What’s a Linked List, Anyway? [Part 2]</div></a></td>
-      <td>a linked list is usually efficient when it comes to adding and removing most elements, but can be very slow to search and find a single element.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2021-12-31</td>
-      <td>12:07:04</td>
-      <td><a href=https://buttondown.email/hillelwayne/archive/principles-of-software-evangelism/><div>Principles of Software Evangelism</div></a></td>
-      <td>The more your life bends around a single topic, the more out-of-touch you become with the rest of software.</td>
-      <td>This is a comment.</td>
-    </tr>
-    <tr>
-      <td>2021-12-31</td>
-      <td>16:08:56</td>
-      <td><a href=https://buttondown.email/hillelwayne/archive/no-seriously-hate-your-tools/><div>No Seriously, Hate Your Tools</div></a></td>
-      <td>We’re better at finding flaws in claims we don’t agree with than claims we do. It’s so easy to believe things that sound nice to us, even if they’re not true. It’s such a blatant cognitive bias. You don’t need to talk about availability heuristics or risk averseness or anything like that, it’s just “if you like something, you’ll be less diligent about evaluating it.”</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-01-05</td>
-      <td>23:34:59</td>
-      <td><a href=https://twitter.com/hamandcheese/status/1478850572677791749><div>Samuel Hammond 🌐🏛 on Twitter</div></a></td>
-      <td>The worlds most accomplished computer programmer would instantly become "low skill" if they time travelled to the 16th century.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-01-12</td>
-      <td>13:03:11</td>
-      <td><a href=https://astralcodexten.substack.com/p/theres-a-time-for-everyone><div>There's A Time For Everyone</div></a></td>
-      <td>Micromarriages come from this post by Chris Olah. They’re a riff on micromorts, a one-in-a-million chance of dying. Risk analysts use micromorts to compare how dangerous different things are: scuba diving is 5 micromorts per dive;  COVID is 2,500 micromorts per infection; climbing Mt. Everest is 30,000 micromorts per attempt. So by analogy, micromarriages are a one in a million chance of getting married. Maybe going to a party gets you 500 micromarriages, and signing up for a really good dating site gives you 10,000. If there’s a Mt. Everest equivalent, I don’t know about it.</td>
-      <td>Beep.</td>
-    </tr>
-    <tr>
-      <td>2022-01-12</td>
-      <td>13:14:56</td>
-      <td><a href=https://astralcodexten.substack.com/p/highlights-from-the-comments-on-dont><div>Astral Codex Ten</div></a></td>
-      <td>P(A|B) = [P(A)*P(B|A)]/P(B), all the rest is commentary.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-01-14</td>
-      <td>08:33:37</td>
-      <td><a href=https://www.youtube.com/watch?v=JOr4QeIjyW4><div>Git Flow Is A Bad Idea • Dave Farley • GOTO 2021 - YouTube</div></a></td>
-      <td>GitFlow is a methodology which works in a certain contexts, like actually having to support multiple versions of the product. This doesn't mean that you can't have continuous integration or even continuous deployment.   Compared to this, trunk based development is easier - but it will not work when supporting multiple lines of product.  Use trunk-based development whenever possible - it's easier on multitude of levels. But, as EVERY SINGLE THING IN THE INDUSTRY it's not a silver bullet.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-01-14</td>
-      <td>14:51:34</td>
-      <td><a href=https://bam.kalzumeus.com/archive/mortgages-are-a-manufactured-product/><div>Mortgages are a manufactured product</div></a></td>
-      <td>Mortgage securitization, and secondary sales of loans, and other mechanisms cause mortgages to migrate from the banking sector to pools of capital which are more structurally insulated against the interest rate cycle.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-01-19</td>
-      <td>15:18:58</td>
-      <td><a href=https://twitter.com/vgr/status/1483895308551553024><div>Venkatesh Rao (7/100 animations ) on Twitter</div></a></td>
-      <td>the more actual freedom people have, the harder and less rewarding managing or leading people becomes, so fewer people want to do it, and of those who do, most only want to appear to be doing it because the rewards of the theater are almost as high as the rewards of doing it</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-01-26</td>
-      <td>17:34:11</td>
-      <td><a href=https://twitter.com/nickcammarata/status/1486456943535222788><div>Nick Cammarata on Twitter</div></a></td>
-      <td>You are not running out of time nor too late for anything</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-02-08</td>
-      <td>09:56:54</td>
-      <td><a href=https://www.unqualified-reservations.org/2007/04/my-new-comments-policy/><div>My new comments policy | Unqualified Reservations by Mencius Moldbug</div></a></td>
-      <td>One of the great things about the Internet is that it routes packets, not sticks or stones.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-02-08</td>
-      <td>19:32:08</td>
-      <td><a href=https://astralcodexten.substack.com/p/heuristics-that-almost-always-work><div>Heuristics That Almost Always Work</div></a></td>
-      <td>You know what doesn’t need oxygen or water or food? A rock with the phrase “YOUR RIDICULOUS-SOUNDING CONTRARIAN IDEA IS WRONG” written on it.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-02-09</td>
-      <td>19:44:28</td>
-      <td><a href=https://www.unqualified-reservations.org/2007/05/what-if-theres-no-such-thing-as-chaotic/><div>What if there’s no such thing as chaotic good? | Unqualified Reservations by Mencius Moldbug</div></a></td>
-      <td>History provides no controlled experiments, and expecting data from an uncontrolled experiment to tell you something is the epistemic equivalent of barebacking.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-02-09</td>
-      <td>21:40:32</td>
-      <td><a href=https://www.unqualified-reservations.org/2007/05/iron-polygon-power-in-united-states/><div>The iron polygon: power in the United States | Unqualified Reservations by Mencius Moldbug</div></a></td>
-      <td>Every Sauron considers himself a Boromir</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-04-24</td>
-      <td>14:38:40</td>
-      <td><a href=https://freddiedeboer.substack.com/p/multiple-personality-disorder-probably/comments><div>"Multiple Personality Disorder" Probably Doesn't Exist, And There Certainly Hasn't Been an Explosion of It Among the Youth</div></a></td>
-      <td>So much of what we assume is cultural dysfunction is really just kids being bored online.</td>
-      <td>Bored kids on Tumblr, etc. - arguably the onus shouldn't be placed on said kids, but the adults reacting - All those goth and emo kids are (probably) productive adults now</td>
-    </tr>
-    <tr>
-      <td>2022-04-24</td>
-      <td>02:29:32</td>
-      <td><a href=https://twitter.com/patio11/status/1468917946995347459><div>Patrick McKenzie on Twitter</div></a></td>
-      <td>In markets in everything news, apparently the culture that is Japanese golf somewhat encourages you to throw a party for all your friends at the golf club if you score a hole in one or albatross.  It's a big deal. Branded goods, lots of alcohol, etc. Costs about $10k.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-04-24</td>
-      <td>15:00:00</td>
-      <td><a href=https://theliberalpatriot.substack.com/p/the-fox-news-fallacy><div>The Fox News Fallacy</div></a></td>
-      <td>The Fox News Fallacy is having a dire effect on many Democrats. This is the idea that if Fox News (substitute here the conservative bête noire of your choice if you prefer) criticizes the Democrats for X then there must be absolutely nothing to X and the job of Democrats is to assert that loudly and often. The problem is that an issue is not necessarily completely invalid just because Fox News mentions it. That depends on the issue.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-24</td>
-      <td>15:04:11</td>
-      <td><a href=https://theliberalpatriot.substack.com/p/6-habits-of-highly-effective-citizens><div>6 Habits of Highly Effective Citizens</div></a></td>
-      <td>Politics is too important to our economic well-being and legal rights not to pay attention. But politics is also too nuts to make it a focal point in life. The highly effective citizen will find a proper balance between engaging in politics and disengaging from politics to enjoy other aspects of life as the seasons move on.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-25</td>
-      <td>13:11:10</td>
-      <td><a href=https://freddiedeboer.substack.com/p/the-politics-of-pure-affiliation><div>The Politics of Pure Affiliation Has Driven Everyone Absolutely Insane</div></a></td>
-      <td>Affiliation doesn't just replace principle, it preempts the possibility of principle.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-25</td>
-      <td>17:14:26</td>
-      <td><a href=https://twitter.com/leaacta/status/1374328647163772934><div>🔪 on Twitter</div></a></td>
-      <td>life hack: you don't have to explain yourself or understand anything, you can just do stuff</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-04-27</td>
-      <td>13:08:23</td>
-      <td><a href=https://www.nytimes.com/2022/04/27/opinion/elon-musk-twitter.html><div>Opinion | Elon Musk Got Twitter Because He Gets Twitter</div></a></td>
-      <td>Jack Dorsey, Twitter’s co-founder and former chief executive, always wanted it to be something else. Something it wasn’t, and couldn’t be. “The purpose of Twitter is to serve the public conversation,” he said in 2018. Twitter began “measuring conversational health” and trying to tweak the platform to burnish it. Sincere as the effort was, it was like those liquor ads advising moderation. You don’t get people to drink less by selling them whiskey.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-27</td>
-      <td>13:10:51</td>
-      <td><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></td>
-      <td>Of all the toxic and disheartening elements of the internet era, the worst is the way that our concept of human value is so often seen as purely crowdsourced, I think. It’s resulted in an internet where a huge portion of the activity ultimately amounts to people begging strangers to approve of them.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-27</td>
-      <td>13:13:53</td>
-      <td><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></td>
-      <td>I never worried about my validity while changing a diaper. I never worried about my validity when caring for an old dog. I never worried about my validity when planting flowers.  When these thoughts--about my validity-- arise in my brain I try to do a task for someone/something else.</td>
-      <td>Kathleen McCook, from the comments</td>
-    </tr>
-    <tr>
-      <td>2022-04-27</td>
-      <td>13:11:41</td>
-      <td><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></td>
-      <td>Even being a rock star can’t turn off the part of your mind that hates you and wants you to feel bad.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-27</td>
-      <td>13:31:37</td>
-      <td><a href=https://eigenrobot.substack.com/p/walk-backward-into-hell><div>walk backward into hell</div></a></td>
-      <td>I see reciting one’s own political beliefs in another’s thread as the social equivalent of walking into a party and shitting on the floor</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-28</td>
-      <td>12:34:18</td>
-      <td><a href=https://freddiedeboer.substack.com/p/its-all-grift-its-all-brands><div>It's All Grift, It's All Brands</div></a></td>
-      <td>you can choose to be an anticapitalist, but you’re still compelled to be a capitalist</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-04-28</td>
-      <td>04:37:45</td>
-      <td><a href=https://www.nytimes.com/1962/04/25/archives/washington-america-is-a-tune-it-must-be-sung-together-the-schools.html><div>Washington; 'America Is a Tune. It Must Be Sung Together.' The Schools Forced Relocation No Legal Defense (Published 1962)</div></a></td>
-      <td>-"America is a tune," said Gerald Stanley Lee. "It must be sung together."</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-04-30</td>
-      <td>13:42:56</td>
-      <td><a href=https://twitter.com/pranesh/status/1470839095064678407><div>Pranesh Prakash on Twitter</div></a></td>
-      <td>A core part of many forms of activism is to dial up the "we're in danger" level to 11. We have limited attention spans, limited activism energy, and there are tons of things that are going wrong with the world. This often leads to hyperbole.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-05-13</td>
-      <td>19:59:36</td>
-      <td><a href=https://blog.jfo.click/hello-hello-world/><div>Hello "Hello world!"</div></a></td>
-      <td>As programmers, our sharpest tool is abstraction, our strongest tool is abstraction, and our most useful tool is abstraction. It is in some sense the only thing we really do: turn information and transformations upon information into other forms of meta information that we manipulate with even more abstractions. The whole idea is that we deal with emergent complexity and then tuck it neatly beneath an interface of some sort and then don't ever think about it again until we have to. But it's still there, bubbling under the crust of the world we're continuously saying hello to, and it's worth it sometimes to dig down a little deeper and marvel at the gems.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-05-13</td>
-      <td>22:50:20</td>
-      <td><a href=https://www.reddit.com/r/linuxmasterrace/comments/oome5r/me_10_seconds_after_i_get_my_steam_deck/><div>r/linuxmasterrace - me, 10 seconds after i get my steam deck</div></a></td>
-      <td>arch is just a lightweight OS optimized for running neofetch</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-05-14</td>
-      <td>20:22:05</td>
-      <td><a href=https://twitter.com/ESYudkowsky/status/1372276766308364290><div>Eliezer Yudkowsky on Twitter</div></a></td>
-      <td>"Acknowledging" the Overton Window helps enforce the Overton Window.  Loudly publicly helpfully warning somebody that their work is "cringe" is cringe enforcement.  Journalists reporting "gaffes" create gaffes.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-05-23</td>
-      <td>03:49:23</td>
-      <td><a href=https://twitter.com/literalbanana><div>Science Banana (@literalbanana) / Twitter</div></a></td>
-      <td>abstractions are like glue: the stronger they are the more you end up needing solvents to clean up the inevitable mess</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-06-12</td>
-      <td>15:51:06</td>
-      <td><a href=https://takeonrules.com/2022/02/26/note-taking-with-org-roam-and-transclusion/><div>Note Taking with Org Roam and Transclusion</div></a></td>
-      <td>“Any sufficiently advanced hobby is indistinguishable from work.”</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-06-13</td>
-      <td>01:41:12</td>
-      <td><a href=https://www.reddit.com/r/emacs/comments/telo1i/issue_with_condael/><div>r/emacs - Issue with conda.el</div></a></td>
-      <td>The biggest lie developers tell themselves and they actually believe: This time we will do it right.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-06-17</td>
-      <td>21:51:32</td>
-      <td><a href=https://web.archive.org/web/19981206063754/http%3A//www.mozilla.org/blue-sky/misc/199805/intertwingle.html><div>blue sky: miscellaneous</div></a></td>
-      <td>``Intertwingularity is not generally acknowledged -- people       keep pretending they can make things deeply hierarchical, categorizable        and sequential when they can't.  Everything is deeply intertwingled.''                -- Ted Nelson</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-06-23</td>
-      <td>19:52:19</td>
-      <td><a href=https://twitter.com/tszzl/status/1540117529754013698><div>roon on Twitter</div></a></td>
-      <td>lean startup is cringe you need be speedrunning into oblivion or success</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-06-23</td>
-      <td>18:33:10</td>
-      <td><a href=https://eigenrobot.substack.com/p/advice-for-academic-refugees><div>advice for academic refugees</div></a></td>
-      <td>People are not your professor or advisor. Just talk to them. Maybe they yell at you for impertinence but so what? They probably don’t have any power over you and the alternative is spending your entire life a wallflower.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-06-30</td>
-      <td>10:20:51</td>
-      <td><a href=https://astralcodexten.substack.com/p/book-review-san-fransicko><div>Book Review: San Fransicko</div></a></td>
-      <td>that most of the damage from urban dysfunction isn’t overt crime. It’s litter, graffiti, literal broken windows, parks that smell like marijuana and are strewn with used needles. People blasting loud music in public places or residential streets at all hours of the night. People staying away from mass transit transportation or public parks or any public spaces at all because they know they’ll be yelled at and harassed or just have to deal with a low-grade miasma of disgust over everything, preventing a real Jane-Jacobs-style civic life from ever taking shape. Class segregation, because anyone who can get out of the dysfunctional areas is desperate to do that. The fall of civic pride, because cities get hard to be proud of.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-06-30</td>
-      <td>10:23:03</td>
-      <td><a href=https://astralcodexten.substack.com/p/book-review-san-fransicko><div>Book Review: San Fransicko</div></a></td>
-      <td>The old saying talks about the man who “uses statistics the way a drunk uses a streetlight; for support rather than illumination”.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-02</td>
-      <td>06:32:04</td>
-      <td><a href=https://slatestarcodex.com/2017/08/29/my-irb-nightmare/><div>My IRB Nightmare</div></a></td>
-      <td>Bureaucracy in science does the same thing: limit the field to big institutional actors with vested interests. No amount of hassle is going to prevent the Pfizer-Merck-Novartis Corporation from doing whatever study will raise their bottom line. But enough hassle will prevent a random psychiatrist at a small community hospital from pursuing his pet theory about bipolar diagnosis. The more hurdles we put up, the more the scientific conversation skews in favor of Pfizer-Merck-Novartis. And the less likely we are to hear little stuff, dissenting voices, and things that don’t make anybody any money.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-02</td>
-      <td>05:55:12</td>
-      <td><a href=https://slatestarcodex.com/2014/05/12/weak-men-are-superweapons/><div>Weak Men Are Superweapons</div></a></td>
-      <td>Remember, people think in terms of categories with central and noncentral members – a sparrow is a central bird, an ostrich a noncentral one.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-03</td>
-      <td>13:05:17</td>
-      <td><a href=https://twitter.com/visakanv/status/1471275450882478080><div>visakan veerasamy on Twitter</div></a></td>
-      <td>if you show up, don't die, and don't quit, almost every year of producing content is better than the last</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-05</td>
-      <td>06:28:02</td>
-      <td><a href=https://www.jeremybrown.tech/8-kubernetes-is-a-red-flag-signalling-premature-optimisation/><div>Kubernetes is a red flag signalling premature optimisation.</div></a></td>
-      <td>We are all magpies distracted by the new shiny.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-05</td>
-      <td>06:28:50</td>
-      <td><a href=https://www.jeremybrown.tech/8-kubernetes-is-a-red-flag-signalling-premature-optimisation/><div>Kubernetes is a red flag signalling premature optimisation.</div></a></td>
-      <td>Solve problems as they arise, not in advance. The work we do should solve the user's issues. Ask yourself, what is the human behaviour I'm trying to impact with my work?</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-05</td>
-      <td>06:26:44</td>
-      <td><a href=http://wiki.c2.com/?GreenspunsTenthRuleOfProgramming><div>Greenspuns Tenth Rule Of Programming</div></a></td>
-      <td>Every sufficiently complex application/language/tool will either have to use Lisp or reinvent it the hard way.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-05</td>
-      <td>06:22:42</td>
-      <td><a href=http://www.draketo.de/proj/py2guile/><div>Going from Python to Guile Scheme</div></a></td>
-      <td>“All Turing-complete languages differ solely in syntactic sugar.”  — Michele Simionato in The Adventures of a Pythonista in Schemeland</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-07</td>
-      <td>13:50:14</td>
-      <td><a href=https://bam.kalzumeus.com/archive/the-alchemy-of-deposits/><div>The alchemy of deposits</div></a></td>
-      <td>It is underappreciated that consumer credit is, effectively, one of the largest welfare programs in the United States. Chargeoffs of e.g. credit card debt effectively transfer a private benefit to the defaulting consumer in return for a diffuse cost to the rest of the public, mediated by the financial industry; the net amount of them is almost as much as food stamps.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-08</td>
-      <td>11:57:06</td>
-      <td><a href=https://freddiedeboer.substack.com/p/the-good-white-man-roster><div>The Good White Man Roster</div></a></td>
-      <td>mindlessly lionizing abstract groups of people is not respecting them</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-10</td>
-      <td>11:08:58</td>
-      <td><a href=https://nintil.com/substack-milquetoast><div>Nintil - [Guest post] How Substack Became Milquetoast</div></a></td>
-      <td>The biggest risk to Substack isn’t that Gmail changes its algorithm or that readers set up automatic forwarding and share accounts. It’s that years from now, each author will have built up so much content that a reader can pay a 1 month subscription, download the archive, and be set on reading material.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-10</td>
-      <td>20:53:44</td>
-      <td><a href=https://astralcodexten.substack.com/p/heuristics-that-almost-always-work><div>Heuristics That Almost Always Work</div></a></td>
-      <td>Whenever someone pooh-poohs rationality as unnecessary, or makes fun of rationalists for spending zillions of brain cycles on “obvious” questions, check how they’re making their decisions. 99.9% of the time, it’s Heuristics That Almost Always Works.(but make sure to watch for the other 0.1%; those are the people you learn from!)</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-07-10</td>
-      <td>21:03:21</td>
-      <td><a href=https://astralcodexten.substack.com/p/heuristics-that-almost-always-work><div>Heuristics That Almost Always Work</div></a></td>
-      <td>I think of expertise as a “map of surprises” because otherwise any reasonably smart person could just figure out whatever the field is from first principles. No need to burn time unless being reasonably smart is the only criteria. A ladle is anything worth putting on the map.</td>
-      <td>Comment by: https://substack.com/profile/795369-some-guyLadle, term from Terry Pratchett</td>
-    </tr>
-    <tr>
-      <td>2022-07-10</td>
-      <td>10:44:34</td>
-      <td><a href=https://www.forourposterity.com/against-netflix/><div>Against Netflix</div></a></td>
-      <td>But part of what makes America special is a certain harshness—first embodied in the Puritans and their quest to settle America’s unforgiving wilderness. Great achievements, new ideas, ingenious inventions emerge from a culture that prizes travail and perseverance, not one that prioritizes comfort and ephemeral satisfaction.</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-12</td>
-      <td>21:30:42</td>
-      <td><a href=https://astralcodexten.substack.com/p/book-review-the-man-from-the-future?utm_medium=reader2><div>Book Review: The Man From The Future</div></a></td>
-      <td>Finally and, I believe, most importantly, prohibition of technology (invention and development, which are hardly separable from underlying scientific inquiry), is contrary to the whole ethos of the industrial age. It is irreconcilable with a major mode of intellectuality as our age understands it. It is hard to imagine such a restraint successfully imposed in our civilization. Only if those disasters that we fear had already occurred, only if humanity were already completely disillusioned about technological civilization, could such a step be taken.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-07-14</td>
-      <td>10:17:38</td>
-      <td><a href=https://www.youtube.com/watch?v=gBE6glZNJuU><div>Terry Davis' TempleOS Brutal Take Down of Linus Torvalds</div></a></td>
-      <td>"An idiot admires complexity, a genius admires simplicity ... An idiot, the more complicated something is, the more he will admire it. If you make something so clusterfucked he can't understand it, he's gonna think you're a god..."</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-19</td>
-      <td>17:09:47</td>
-      <td><a href=https://www.youtube.com/watch?v=c3xSJuoUnN8><div>Influencer Courses are Garbage: The Dark Side of Content Creation</div></a></td>
-      <td>"There is nothing wrong with you if other people don't pay attention to your art. That art is for you. That is enough. I promise."</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2022-07-19</td>
-      <td>13:36:59</td>
-      <td><a href=https://freddiedeboer.substack.com/p/we-could-use-a-reinvigorated-skeptic/comments?utm_medium=email><div>We Could Use a Reinvigorated Skeptic Movement</div></a></td>
-      <td>Our amazing brains do all sorts of things to cope; rationality is fantastic for some things, but not for art and not necessarily for comfort.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>2022-07-21</td>
-      <td>16:01:44</td>
-      <td><a href=https://www.dominicanajournal.org/why-thomism/><div>Why Thomism?</div></a></td>
+      <th>2022-07-21</th>
+      <th><a href=https://www.dominicanajournal.org/why-thomism/><div>Why Thomism?</div></a></th>
+      <th>16:01:44</th>
       <td>In this regard, we can apply to St. Thomas what Sherlock Holmes said of his brother Mycroft: “All other men are specialists, but his specialism is omniscience.” Of course, Thomas himself would disapprove of such intemperate speech, but, admitting the hyperbole, we might say that a certain degree of “omniscience” is merely a corollary of the comprehensiveness we have just described.</td>
-      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-07-19</th>
+      <th><a href=https://www.youtube.com/watch?v=c3xSJuoUnN8><div>Influencer Courses are Garbage: The Dark Side of Content Creation</div></a></th>
+      <th>17:09:47</th>
+      <td>"There is nothing wrong with you if other people don't pay attention to your art. That art is for you. That is enough. I promise."</td>
+    </tr>
+    <tr>
+      <th><a href=https://freddiedeboer.substack.com/p/we-could-use-a-reinvigorated-skeptic/comments?utm_medium=email><div>We Could Use a Reinvigorated Skeptic Movement</div></a></th>
+      <th>13:36:59</th>
+      <td>Our amazing brains do all sorts of things to cope; rationality is fantastic for some things, but not for art and not necessarily for comfort.</td>
+    </tr>
+    <tr>
+      <th>2022-07-14</th>
+      <th><a href=https://www.youtube.com/watch?v=gBE6glZNJuU><div>Terry Davis' TempleOS Brutal Take Down of Linus Torvalds</div></a></th>
+      <th>10:17:38</th>
+      <td>"An idiot admires complexity, a genius admires simplicity ... An idiot, the more complicated something is, the more he will admire it. If you make something so clusterfucked he can't understand it, he's gonna think you're a god..."</td>
+    </tr>
+    <tr>
+      <th>2022-07-12</th>
+      <th><a href=https://astralcodexten.substack.com/p/book-review-the-man-from-the-future?utm_medium=reader2><div>Book Review: The Man From The Future</div></a></th>
+      <th>21:30:42</th>
+      <td>Finally and, I believe, most importantly, prohibition of technology (invention and development, which are hardly separable from underlying scientific inquiry), is contrary to the whole ethos of the industrial age. It is irreconcilable with a major mode of intellectuality as our age understands it. It is hard to imagine such a restraint successfully imposed in our civilization. Only if those disasters that we fear had already occurred, only if humanity were already completely disillusioned about technological civilization, could such a step be taken.</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">2022-07-10</th>
+      <th><a href=https://www.forourposterity.com/against-netflix/><div>Against Netflix</div></a></th>
+      <th>10:44:34</th>
+      <td>But part of what makes America special is a certain harshness—first embodied in the Puritans and their quest to settle America’s unforgiving wilderness. Great achievements, new ideas, ingenious inventions emerge from a culture that prizes travail and perseverance, not one that prioritizes comfort and ephemeral satisfaction.</td>
+    </tr>
+    <tr>
+      <th><a href=https://nintil.com/substack-milquetoast><div>Nintil - [Guest post] How Substack Became Milquetoast</div></a></th>
+      <th>11:08:58</th>
+      <td>The biggest risk to Substack isn’t that Gmail changes its algorithm or that readers set up automatic forwarding and share accounts. It’s that years from now, each author will have built up so much content that a reader can pay a 1 month subscription, download the archive, and be set on reading material.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top"><a href=https://astralcodexten.substack.com/p/heuristics-that-almost-always-work><div>Heuristics That Almost Always Work</div></a></th>
+      <th>21:03:21</th>
+      <td>I think of expertise as a “map of surprises” because otherwise any reasonably smart person could just figure out whatever the field is from first principles. No need to burn time unless being reasonably smart is the only criteria. A ladle is anything worth putting on the map.</td>
+    </tr>
+    <tr>
+      <th>20:53:44</th>
+      <td>Whenever someone pooh-poohs rationality as unnecessary, or makes fun of rationalists for spending zillions of brain cycles on “obvious” questions, check how they’re making their decisions. 99.9% of the time, it’s Heuristics That Almost Always Works.(but make sure to watch for the other 0.1%; those are the people you learn from!)</td>
+    </tr>
+    <tr>
+      <th>2022-07-08</th>
+      <th><a href=https://freddiedeboer.substack.com/p/the-good-white-man-roster><div>The Good White Man Roster</div></a></th>
+      <th>11:57:06</th>
+      <td>mindlessly lionizing abstract groups of people is not respecting them</td>
+    </tr>
+    <tr>
+      <th>2022-07-07</th>
+      <th><a href=https://bam.kalzumeus.com/archive/the-alchemy-of-deposits/><div>The alchemy of deposits</div></a></th>
+      <th>13:50:14</th>
+      <td>It is underappreciated that consumer credit is, effectively, one of the largest welfare programs in the United States. Chargeoffs of e.g. credit card debt effectively transfer a private benefit to the defaulting consumer in return for a diffuse cost to the rest of the public, mediated by the financial industry; the net amount of them is almost as much as food stamps.</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">2022-07-05</th>
+      <th rowspan="2" valign="top"><a href=https://www.jeremybrown.tech/8-kubernetes-is-a-red-flag-signalling-premature-optimisation/><div>Kubernetes is a red flag signalling premature optimisation.</div></a></th>
+      <th>06:28:50</th>
+      <td>Solve problems as they arise, not in advance. The work we do should solve the user's issues. Ask yourself, what is the human behaviour I'm trying to impact with my work?</td>
+    </tr>
+    <tr>
+      <th>06:28:02</th>
+      <td>We are all magpies distracted by the new shiny.</td>
+    </tr>
+    <tr>
+      <th><a href=http://www.draketo.de/proj/py2guile/><div>Going from Python to Guile Scheme</div></a></th>
+      <th>06:22:42</th>
+      <td>“All Turing-complete languages differ solely in syntactic sugar.”  — Michele Simionato in The Adventures of a Pythonista in Schemeland</td>
+    </tr>
+    <tr>
+      <th><a href=http://wiki.c2.com/?GreenspunsTenthRuleOfProgramming><div>Greenspuns Tenth Rule Of Programming</div></a></th>
+      <th>06:26:44</th>
+      <td>Every sufficiently complex application/language/tool will either have to use Lisp or reinvent it the hard way.</td>
+    </tr>
+    <tr>
+      <th>2022-07-03</th>
+      <th><a href=https://twitter.com/visakanv/status/1471275450882478080><div>visakan veerasamy on Twitter</div></a></th>
+      <th>13:05:17</th>
+      <td>if you show up, don't die, and don't quit, almost every year of producing content is better than the last</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-07-02</th>
+      <th><a href=https://slatestarcodex.com/2017/08/29/my-irb-nightmare/><div>My IRB Nightmare</div></a></th>
+      <th>06:32:04</th>
+      <td>Bureaucracy in science does the same thing: limit the field to big institutional actors with vested interests. No amount of hassle is going to prevent the Pfizer-Merck-Novartis Corporation from doing whatever study will raise their bottom line. But enough hassle will prevent a random psychiatrist at a small community hospital from pursuing his pet theory about bipolar diagnosis. The more hurdles we put up, the more the scientific conversation skews in favor of Pfizer-Merck-Novartis. And the less likely we are to hear little stuff, dissenting voices, and things that don’t make anybody any money.</td>
+    </tr>
+    <tr>
+      <th><a href=https://slatestarcodex.com/2014/05/12/weak-men-are-superweapons/><div>Weak Men Are Superweapons</div></a></th>
+      <th>05:55:12</th>
+      <td>Remember, people think in terms of categories with central and noncentral members – a sparrow is a central bird, an ostrich a noncentral one.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-06-30</th>
+      <th rowspan="2" valign="top"><a href=https://astralcodexten.substack.com/p/book-review-san-fransicko><div>Book Review: San Fransicko</div></a></th>
+      <th>10:23:03</th>
+      <td>The old saying talks about the man who “uses statistics the way a drunk uses a streetlight; for support rather than illumination”.</td>
+    </tr>
+    <tr>
+      <th>10:20:51</th>
+      <td>that most of the damage from urban dysfunction isn’t overt crime. It’s litter, graffiti, literal broken windows, parks that smell like marijuana and are strewn with used needles. People blasting loud music in public places or residential streets at all hours of the night. People staying away from mass transit transportation or public parks or any public spaces at all because they know they’ll be yelled at and harassed or just have to deal with a low-grade miasma of disgust over everything, preventing a real Jane-Jacobs-style civic life from ever taking shape. Class segregation, because anyone who can get out of the dysfunctional areas is desperate to do that. The fall of civic pride, because cities get hard to be proud of.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-06-23</th>
+      <th><a href=https://twitter.com/tszzl/status/1540117529754013698><div>roon on Twitter</div></a></th>
+      <th>19:52:19</th>
+      <td>lean startup is cringe you need be speedrunning into oblivion or success</td>
+    </tr>
+    <tr>
+      <th><a href=https://eigenrobot.substack.com/p/advice-for-academic-refugees><div>advice for academic refugees</div></a></th>
+      <th>18:33:10</th>
+      <td>People are not your professor or advisor. Just talk to them. Maybe they yell at you for impertinence but so what? They probably don’t have any power over you and the alternative is spending your entire life a wallflower.</td>
+    </tr>
+    <tr>
+      <th>2022-06-17</th>
+      <th><a href=https://web.archive.org/web/19981206063754/http%3A//www.mozilla.org/blue-sky/misc/199805/intertwingle.html><div>blue sky: miscellaneous</div></a></th>
+      <th>21:51:32</th>
+      <td>``Intertwingularity is not generally acknowledged -- people       keep pretending they can make things deeply hierarchical, categorizable        and sequential when they can't.  Everything is deeply intertwingled.''                -- Ted Nelson</td>
+    </tr>
+    <tr>
+      <th>2022-06-13</th>
+      <th><a href=https://www.reddit.com/r/emacs/comments/telo1i/issue_with_condael/><div>r/emacs - Issue with conda.el</div></a></th>
+      <th>01:41:12</th>
+      <td>The biggest lie developers tell themselves and they actually believe: This time we will do it right.</td>
+    </tr>
+    <tr>
+      <th>2022-06-12</th>
+      <th><a href=https://takeonrules.com/2022/02/26/note-taking-with-org-roam-and-transclusion/><div>Note Taking with Org Roam and Transclusion</div></a></th>
+      <th>15:51:06</th>
+      <td>“Any sufficiently advanced hobby is indistinguishable from work.”</td>
+    </tr>
+    <tr>
+      <th>2022-05-23</th>
+      <th><a href=https://twitter.com/literalbanana><div>Science Banana (@literalbanana) / Twitter</div></a></th>
+      <th>03:49:23</th>
+      <td>abstractions are like glue: the stronger they are the more you end up needing solvents to clean up the inevitable mess</td>
+    </tr>
+    <tr>
+      <th>2022-05-14</th>
+      <th><a href=https://twitter.com/ESYudkowsky/status/1372276766308364290><div>Eliezer Yudkowsky on Twitter</div></a></th>
+      <th>20:22:05</th>
+      <td>"Acknowledging" the Overton Window helps enforce the Overton Window.  Loudly publicly helpfully warning somebody that their work is "cringe" is cringe enforcement.  Journalists reporting "gaffes" create gaffes.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-05-13</th>
+      <th><a href=https://www.reddit.com/r/linuxmasterrace/comments/oome5r/me_10_seconds_after_i_get_my_steam_deck/><div>r/linuxmasterrace - me, 10 seconds after i get my steam deck</div></a></th>
+      <th>22:50:20</th>
+      <td>arch is just a lightweight OS optimized for running neofetch</td>
+    </tr>
+    <tr>
+      <th><a href=https://blog.jfo.click/hello-hello-world/><div>Hello "Hello world!"</div></a></th>
+      <th>19:59:36</th>
+      <td>As programmers, our sharpest tool is abstraction, our strongest tool is abstraction, and our most useful tool is abstraction. It is in some sense the only thing we really do: turn information and transformations upon information into other forms of meta information that we manipulate with even more abstractions. The whole idea is that we deal with emergent complexity and then tuck it neatly beneath an interface of some sort and then don't ever think about it again until we have to. But it's still there, bubbling under the crust of the world we're continuously saying hello to, and it's worth it sometimes to dig down a little deeper and marvel at the gems.</td>
+    </tr>
+    <tr>
+      <th>2022-04-30</th>
+      <th><a href=https://twitter.com/pranesh/status/1470839095064678407><div>Pranesh Prakash on Twitter</div></a></th>
+      <th>13:42:56</th>
+      <td>A core part of many forms of activism is to dial up the "we're in danger" level to 11. We have limited attention spans, limited activism energy, and there are tons of things that are going wrong with the world. This often leads to hyperbole.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-04-28</th>
+      <th><a href=https://www.nytimes.com/1962/04/25/archives/washington-america-is-a-tune-it-must-be-sung-together-the-schools.html><div>Washington; 'America Is a Tune. It Must Be Sung Together.' The Schools Forced Relocation No Legal Defense (Published 1962)</div></a></th>
+      <th>04:37:45</th>
+      <td>-"America is a tune," said Gerald Stanley Lee. "It must be sung together."</td>
+    </tr>
+    <tr>
+      <th><a href=https://freddiedeboer.substack.com/p/its-all-grift-its-all-brands><div>It's All Grift, It's All Brands</div></a></th>
+      <th>12:34:18</th>
+      <td>you can choose to be an anticapitalist, but you’re still compelled to be a capitalist</td>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">2022-04-27</th>
+      <th><a href=https://www.nytimes.com/2022/04/27/opinion/elon-musk-twitter.html><div>Opinion | Elon Musk Got Twitter Because He Gets Twitter</div></a></th>
+      <th>13:08:23</th>
+      <td>Jack Dorsey, Twitter’s co-founder and former chief executive, always wanted it to be something else. Something it wasn’t, and couldn’t be. “The purpose of Twitter is to serve the public conversation,” he said in 2018. Twitter began “measuring conversational health” and trying to tweak the platform to burnish it. Sincere as the effort was, it was like those liquor ads advising moderation. You don’t get people to drink less by selling them whiskey.</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top"><a href=https://freddiedeboer.substack.com/p/nobody-walks-around-feeling-valid><div>Nobody Walks Around Feeling "Valid"</div></a></th>
+      <th>13:13:53</th>
+      <td>I never worried about my validity while changing a diaper. I never worried about my validity when caring for an old dog. I never worried about my validity when planting flowers.  When these thoughts--about my validity-- arise in my brain I try to do a task for someone/something else.</td>
+    </tr>
+    <tr>
+      <th>13:11:41</th>
+      <td>Even being a rock star can’t turn off the part of your mind that hates you and wants you to feel bad.</td>
+    </tr>
+    <tr>
+      <th>13:10:51</th>
+      <td>Of all the toxic and disheartening elements of the internet era, the worst is the way that our concept of human value is so often seen as purely crowdsourced, I think. It’s resulted in an internet where a huge portion of the activity ultimately amounts to people begging strangers to approve of them.</td>
+    </tr>
+    <tr>
+      <th><a href=https://eigenrobot.substack.com/p/walk-backward-into-hell><div>walk backward into hell</div></a></th>
+      <th>13:31:37</th>
+      <td>I see reciting one’s own political beliefs in another’s thread as the social equivalent of walking into a party and shitting on the floor</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-04-25</th>
+      <th><a href=https://twitter.com/leaacta/status/1374328647163772934><div>🔪 on Twitter</div></a></th>
+      <th>17:14:26</th>
+      <td>life hack: you don't have to explain yourself or understand anything, you can just do stuff</td>
+    </tr>
+    <tr>
+      <th><a href=https://freddiedeboer.substack.com/p/the-politics-of-pure-affiliation><div>The Politics of Pure Affiliation Has Driven Everyone Absolutely Insane</div></a></th>
+      <th>13:11:10</th>
+      <td>Affiliation doesn't just replace principle, it preempts the possibility of principle.</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">2022-04-24</th>
+      <th><a href=https://twitter.com/patio11/status/1468917946995347459><div>Patrick McKenzie on Twitter</div></a></th>
+      <th>02:29:32</th>
+      <td>In markets in everything news, apparently the culture that is Japanese golf somewhat encourages you to throw a party for all your friends at the golf club if you score a hole in one or albatross.  It's a big deal. Branded goods, lots of alcohol, etc. Costs about $10k.</td>
+    </tr>
+    <tr>
+      <th><a href=https://theliberalpatriot.substack.com/p/the-fox-news-fallacy><div>The Fox News Fallacy</div></a></th>
+      <th>15:00:00</th>
+      <td>The Fox News Fallacy is having a dire effect on many Democrats. This is the idea that if Fox News (substitute here the conservative bête noire of your choice if you prefer) criticizes the Democrats for X then there must be absolutely nothing to X and the job of Democrats is to assert that loudly and often. The problem is that an issue is not necessarily completely invalid just because Fox News mentions it. That depends on the issue.</td>
+    </tr>
+    <tr>
+      <th><a href=https://theliberalpatriot.substack.com/p/6-habits-of-highly-effective-citizens><div>6 Habits of Highly Effective Citizens</div></a></th>
+      <th>15:04:11</th>
+      <td>Politics is too important to our economic well-being and legal rights not to pay attention. But politics is also too nuts to make it a focal point in life. The highly effective citizen will find a proper balance between engaging in politics and disengaging from politics to enjoy other aspects of life as the seasons move on.</td>
+    </tr>
+    <tr>
+      <th><a href=https://freddiedeboer.substack.com/p/multiple-personality-disorder-probably/comments><div>"Multiple Personality Disorder" Probably Doesn't Exist, And There Certainly Hasn't Been an Explosion of It Among the Youth</div></a></th>
+      <th>14:38:40</th>
+      <td>So much of what we assume is cultural dysfunction is really just kids being bored online.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-02-09</th>
+      <th><a href=https://www.unqualified-reservations.org/2007/05/what-if-theres-no-such-thing-as-chaotic/><div>What if there’s no such thing as chaotic good? | Unqualified Reservations by Mencius Moldbug</div></a></th>
+      <th>19:44:28</th>
+      <td>History provides no controlled experiments, and expecting data from an uncontrolled experiment to tell you something is the epistemic equivalent of barebacking.</td>
+    </tr>
+    <tr>
+      <th><a href=https://www.unqualified-reservations.org/2007/05/iron-polygon-power-in-united-states/><div>The iron polygon: power in the United States | Unqualified Reservations by Mencius Moldbug</div></a></th>
+      <th>21:40:32</th>
+      <td>Every Sauron considers himself a Boromir</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-02-08</th>
+      <th><a href=https://www.unqualified-reservations.org/2007/04/my-new-comments-policy/><div>My new comments policy | Unqualified Reservations by Mencius Moldbug</div></a></th>
+      <th>09:56:54</th>
+      <td>One of the great things about the Internet is that it routes packets, not sticks or stones.</td>
+    </tr>
+    <tr>
+      <th><a href=https://astralcodexten.substack.com/p/heuristics-that-almost-always-work><div>Heuristics That Almost Always Work</div></a></th>
+      <th>19:32:08</th>
+      <td>You know what doesn’t need oxygen or water or food? A rock with the phrase “YOUR RIDICULOUS-SOUNDING CONTRARIAN IDEA IS WRONG” written on it.</td>
+    </tr>
+    <tr>
+      <th>2022-01-26</th>
+      <th><a href=https://twitter.com/nickcammarata/status/1486456943535222788><div>Nick Cammarata on Twitter</div></a></th>
+      <th>17:34:11</th>
+      <td>You are not running out of time nor too late for anything</td>
+    </tr>
+    <tr>
+      <th>2022-01-19</th>
+      <th><a href=https://twitter.com/vgr/status/1483895308551553024><div>Venkatesh Rao (7/100 animations ) on Twitter</div></a></th>
+      <th>15:18:58</th>
+      <td>the more actual freedom people have, the harder and less rewarding managing or leading people becomes, so fewer people want to do it, and of those who do, most only want to appear to be doing it because the rewards of the theater are almost as high as the rewards of doing it</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-01-14</th>
+      <th><a href=https://www.youtube.com/watch?v=JOr4QeIjyW4><div>Git Flow Is A Bad Idea • Dave Farley • GOTO 2021 - YouTube</div></a></th>
+      <th>08:33:37</th>
+      <td>GitFlow is a methodology which works in a certain contexts, like actually having to support multiple versions of the product. This doesn't mean that you can't have continuous integration or even continuous deployment.   Compared to this, trunk based development is easier - but it will not work when supporting multiple lines of product.  Use trunk-based development whenever possible - it's easier on multitude of levels. But, as EVERY SINGLE THING IN THE INDUSTRY it's not a silver bullet.</td>
+    </tr>
+    <tr>
+      <th><a href=https://bam.kalzumeus.com/archive/mortgages-are-a-manufactured-product/><div>Mortgages are a manufactured product</div></a></th>
+      <th>14:51:34</th>
+      <td>Mortgage securitization, and secondary sales of loans, and other mechanisms cause mortgages to migrate from the banking sector to pools of capital which are more structurally insulated against the interest rate cycle.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2022-01-12</th>
+      <th><a href=https://astralcodexten.substack.com/p/theres-a-time-for-everyone><div>There's A Time For Everyone</div></a></th>
+      <th>13:03:11</th>
+      <td>Micromarriages come from this post by Chris Olah. They’re a riff on micromorts, a one-in-a-million chance of dying. Risk analysts use micromorts to compare how dangerous different things are: scuba diving is 5 micromorts per dive;  COVID is 2,500 micromorts per infection; climbing Mt. Everest is 30,000 micromorts per attempt. So by analogy, micromarriages are a one in a million chance of getting married. Maybe going to a party gets you 500 micromarriages, and signing up for a really good dating site gives you 10,000. If there’s a Mt. Everest equivalent, I don’t know about it.</td>
+    </tr>
+    <tr>
+      <th><a href=https://astralcodexten.substack.com/p/highlights-from-the-comments-on-dont><div>Astral Codex Ten</div></a></th>
+      <th>13:14:56</th>
+      <td>P(A|B) = [P(A)*P(B|A)]/P(B), all the rest is commentary.</td>
+    </tr>
+    <tr>
+      <th>2022-01-05</th>
+      <th><a href=https://twitter.com/hamandcheese/status/1478850572677791749><div>Samuel Hammond 🌐🏛 on Twitter</div></a></th>
+      <th>23:34:59</th>
+      <td>The worlds most accomplished computer programmer would instantly become "low skill" if they time travelled to the 16th century.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">2021-12-31</th>
+      <th><a href=https://buttondown.email/hillelwayne/archive/principles-of-software-evangelism/><div>Principles of Software Evangelism</div></a></th>
+      <th>12:07:04</th>
+      <td>The more your life bends around a single topic, the more out-of-touch you become with the rest of software.</td>
+    </tr>
+    <tr>
+      <th><a href=https://buttondown.email/hillelwayne/archive/no-seriously-hate-your-tools/><div>No Seriously, Hate Your Tools</div></a></th>
+      <th>16:08:56</th>
+      <td>We’re better at finding flaws in claims we don’t agree with than claims we do. It’s so easy to believe things that sound nice to us, even if they’re not true. It’s such a blatant cognitive bias. You don’t need to talk about availability heuristics or risk averseness or anything like that, it’s just “if you like something, you’ll be less diligent about evaluating it.”</td>
+    </tr>
+    <tr>
+      <th>2021-11-16</th>
+      <th><a href=https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996><div>What’s a Linked List, Anyway? [Part 2]</div></a></th>
+      <th>10:41:32</th>
+      <td>a linked list is usually efficient when it comes to adding and removing most elements, but can be very slow to search and find a single element.</td>
     </tr>
   </tbody>
 </table>
