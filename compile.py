@@ -1,23 +1,26 @@
-from datetime import datetime
+#!/usr/bin/python
+
 import glob
 import json
+from datetime import datetime
 
-import pandas as pd
 import bs4
-
-EXPORT_DIRECTORY = "/mnt/c/Users/justin/Downloads/"
-
+import pandas as pd
 
 def main():
     """
-    Reads the QuoteBack export to my Downloads folder, and parses it using panda's to_html
+    Reads the QuoteBack export to my Downloads folder,
+    and parses it using panda's to_html
     """
 
     # Definitely a better way of doing this, but for now it works
-    qb_file = glob.glob(f"{EXPORT_DIRECTORY}/*-quoteback.json")[-1]
+    export_directory = "/home/justin/Downloads/"
+    qb_file = glob.glob(f"{export_directory}/*-quoteback.json")[-1]
     print(qb_file)
 
-    with open(qb_file,) as f:
+    with open(
+        qb_file,
+    ) as f:
 
         quotes = []
 
