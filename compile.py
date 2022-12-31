@@ -7,6 +7,7 @@ from datetime import datetime
 import bs4
 import pandas as pd
 
+
 def main():
     """
     Reads the QuoteBack export to my Downloads folder,
@@ -85,6 +86,7 @@ def main():
 
     with open("index.html", "w") as file:
         file.write(formatted_string)
+
 
 if __name__ == "__main__":
     main()
