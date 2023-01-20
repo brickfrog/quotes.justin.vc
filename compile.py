@@ -53,8 +53,10 @@ def main():
         lambda x: bs4.BeautifulSoup(x, "lxml").get_text().replace("\n", " ")
     )
     table["Link"] = "<a href=" + table["URL"] + "><div>" + table["Link"] + "</div></a>"
-    table = (table.drop(["URL", "DateTime", "Comments"], axis=1))
-    table = table.set_index(["Date", "Link", "Time"]).sort_index(ascending=False)
+    table = table.drop(["URL", "DateTime", "Comments"], axis=1)
+    table = table.set_index(["Date", "Link", "Time"]).sort_index(
+        ascending=[False, False, True]
+    )
 
     html_string = """
     <html>
